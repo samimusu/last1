@@ -1,0 +1,28 @@
+h1,div.money,div.complete{
+    color: red;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+h3,h4{
+    color: white;
+}
+
+div.money,div.complete,h1{
+    font-size: 55px;
+}
+
+div.complete{
+    display: inline-block;
+}
+
+div.money{
+    border-bottom: yellow 10px double;
+    display: inline-block;
+}
+
+#countOutput{
+    color: red;
+    font-size: 50px;
+}

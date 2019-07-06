@@ -1,0 +1,21 @@
+
+
+ul{
+    font-size: 1.4em;
+}
+
+
+tr{
+    height: 35px;
+    border: 2px;
+}
+table{
+    width: auto;
+    text-align: center;
+}
+
+
+img.intel,img.amd{
+    width: 25%;
+    height: 25%;
+}

@@ -1,0 +1,28 @@
+body{
+    background-color: white;
+    width:auto;
+    height: auto;
+}
+
+table,tr,th,td{
+    border:2px salmon solid;
+    padding: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+dd{
+    border:2px salmon solid;
+    padding: 5px;
+    border-collapse: collapse;
+    display:inline-block;
+}
+
+p.line{
+    border-bottom: 1px solid salmon;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}

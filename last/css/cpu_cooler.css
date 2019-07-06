@@ -1,0 +1,13 @@
+tr{
+    height: 35px;
+    border: 2px;
+}
+td{
+    width: 150px;
+    text-align: center;
+}
+
+td.socket{
+    width: auto;
+}
+

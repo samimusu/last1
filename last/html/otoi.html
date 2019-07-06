@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>お問い合わせ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/otoi.css" />
+    </head>
+    <script>
+        function sound(){
+            window.location.href = 'https://kids.yahoo.co.jp/games/sports/013.html';
+        }
+    </script>
+    <body>
+    <fieldset class="kanri">
+        <legend>管理人情報</legend>
+        <p>氏名：染谷英志</p>
+        <p>職業：学生</p>
+        <p>年齢：２０歳</p>
+        <a href="https://www.facebook.com/profile.php?id=100004107166199">Facebookはこちら</a><br>
+        <img class="eiji" src="../images/DSCPDC_0001_BURST20190124130316476_COVER.JPG" alt="">
+    </fieldset>
+    <fieldset class="otoi">
+        <legend>お問い合わせフォーム</legend>
+        <form method="post" action="confilm.php">
+            <p><label>氏名:
+                <input type="text" maxlength="255" name="namae" value="">
+            </label></p>
+            <label>お問い合わせ内容<br>
+                <textarea class="bun" maxlength="250" name="naiyou" placeholder="お問合せ内容の入力"></textarea>
+
+            </label>
+            <br>
+        <fieldset>
+            <legend>追加情報</legend>
+            <p>お得な情報や、ここだけの情報をお送りしたいと思っていますので、ぜひ登録をお願いいたします。</p>
+            <p>メールアドレス:
+                <input type="text" name="mailaddress">
+            </p>
+        </fieldset>
+        <input type="submit" value="送信">
+        </form>
+    </fieldset>
+    <li><a href="../../Logout.php">ログアウト</a></li>
+    </body>
+</html>
