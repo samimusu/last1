@@ -115,6 +115,9 @@ MAMPのphpMyAdmin内
 				<input type="submit" value="新規登録">
 			</fieldset>
 		</form>
+		<fieldset>
+			ログインできない方はこちら
+		</fieldset>
 	</body>
 </html>
 
