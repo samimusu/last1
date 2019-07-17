@@ -7,6 +7,12 @@
 <body>
 
 <?php
+/*直接ページのアクセスされた時の対処 */
+if (! isset ( $_POST ["btn"] )) {
+	header ( "Location: otoi_ver1_01.php" );
+}
+
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -81,7 +87,7 @@ if ($errmsg != '') {
     $body = $_POST['naiyou'];
   
     //メール設定
-    //$mail->SMTPDebug = 2; //管理人デバッグ用
+    /* mail->SMTPDebug = 2; //管理人デバッグ用 */
     $mail->isSMTP();
     $mail->SMTPAuth = true;
     $mail->Host = $host;

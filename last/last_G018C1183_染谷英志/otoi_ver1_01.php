@@ -6,11 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="../css/otoi.css" />
     </head>
-    <script>
-        function sound(){
-            window.location.href = 'https://kids.yahoo.co.jp/games/sports/013.html';
-        }
-    </script>
     <body>
     <?php
 /*******************************
@@ -59,10 +54,8 @@ if (isset($_POST["backbtn"])) {
                 <input type="text" name="mailaddress" value="<?=$pMailaddress?>">
             </p>
         </fieldset>
-        <input type="submit" value="送信">
-        </form>
-    </fieldset>
-    <li><a href="/last100/Logout.php">ログアウト</a></li>
-    <li><a href="last_染谷英志.html">目次へ戻る</a></li>
+            <input type="submit" name="btn" value="送信">
+            </form>
+        </fieldset>
     </body>
 </html>

@@ -7,6 +7,10 @@
 <body>
 
 <?php
+/*直接ページのアクセスされた時の対処 */
+if (! isset ( $_POST ["btn"] )) {
+	header ( "Location: otoi_ver1_01.php" );
+}
 /* データの受け取り */
 
 $pName = $_POST["namae"]; //お名前
@@ -39,7 +43,7 @@ if ($errmsg != '') {
 	//エラーメッセージが空ではない場合には、エラーメッセージを表示する
     echo $errmsg;
     	//[前のページへ戻る]ボタンを表示する
-	echo '<form method="post" action="otoi_ver1.01.php">';
+	echo '<form method="post" action="otoi_ver1_01.php">';
 	echo '<input type="hidden" name="namae" value="'.$pName.'">';
 	echo '<input type="hidden" name="mailaddress" value="'.$pMailaddress.'">';
 	echo '<input type="hidden" name="naiyou" value="'.$pNaiyo.'">';
