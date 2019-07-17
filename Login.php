@@ -115,9 +115,12 @@ MAMPのphpMyAdmin内
 				<input type="submit" value="新規登録">
 			</fieldset>
 		</form>
-		<fieldset>
-			ログインできない方はこちら
-		</fieldset>
+		<form action="Relogin.php">
+			<fieldset>
+				<legend>ログインできない方はこちら</legend> 
+				<input type="submit" value="">
+			</fieldset>
+		</form>
 	</body>
 </html>
 
