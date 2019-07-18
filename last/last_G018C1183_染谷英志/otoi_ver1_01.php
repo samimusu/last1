@@ -30,32 +30,41 @@ if (isset($_POST["backbtn"])) {
 ?>
     <fieldset class="kanri">
         <legend>管理人情報</legend>
+
+        <ul>
             <p>氏名：染谷英志</p>
             <p>職業：学生</p>
-            <p>年齢：２０歳</p>
-        <a href="https://www.facebook.com/profile.php?id=100004107166199">Facebookはこちら</a><br>
-        <img class="eiji" src="../images/DSCPDC_0001_BURST20190124130316476_COVER.JPG" alt="">
+            <p>年齢：２１歳</p>
+            <img class="eiji" src="images/DSCPDC_0001_BURST20190124130316476_COVER.JPG" alt="">
+        </ul>
+        <br>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100004107166199">Facebookはこちら</a>
     </fieldset>
+
     <fieldset class="otoi">
         <legend>お問い合わせフォーム</legend>
         <form method="post" action="confilm_ver1_01.php">
             <p><label>氏名:
-                <input type="text" maxlength="255" name="namae" value="<?=$pName?>">
+                <input type="text" maxlength="255" name="namae" placeholder="名前の入力" value="<?=$pName?>">
             </label></p>
             <label>お問い合わせ内容<br>
                 <textarea class="bun" maxlength="250" name="naiyou" placeholder="お問合せ内容の入力"><?=$pNaiyo?></textarea>
 
             </label>
             <br>
+
         <fieldset>
             <legend>追加情報</legend>
             <p>お得な情報や、ここだけの情報をお送りしたいと思っていますので、ぜひ登録をお願いいたします。</p>
             <p>メールアドレス:
-                <input type="text" name="mailaddress" value="<?=$pMailaddress?>">
+                <input type="text" name="mailaddress" placeholder="メールアドレスの入力" value="<?=$pMailaddress?>">
             </p>
         </fieldset>
+
             <input type="submit" name="btn" value="送信">
             </form>
         </fieldset>
+
     </body>
 </html>
