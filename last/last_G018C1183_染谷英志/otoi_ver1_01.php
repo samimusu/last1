@@ -4,7 +4,7 @@
         <title>お問い合わせ</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="../css/otoi.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/otoi.css"/>
     </head>
     <body>
     <?php
@@ -30,9 +30,9 @@ if (isset($_POST["backbtn"])) {
 ?>
     <fieldset class="kanri">
         <legend>管理人情報</legend>
-        <p>氏名：染谷英志</p>
-        <p>職業：学生</p>
-        <p>年齢：２０歳</p>
+            <p>氏名：染谷英志</p>
+            <p>職業：学生</p>
+            <p>年齢：２０歳</p>
         <a href="https://www.facebook.com/profile.php?id=100004107166199">Facebookはこちら</a><br>
         <img class="eiji" src="../images/DSCPDC_0001_BURST20190124130316476_COVER.JPG" alt="">
     </fieldset>

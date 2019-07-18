@@ -8,7 +8,7 @@
 
 <?php
 /*直接ページのアクセスされた時の対処 */
-if (! isset ( $_POST ["btn"] )) {
+if (! isset ( $_POST ["okbtn"] )) {
 	header ( "Location: otoi_ver1_01.php" );
 }
 
@@ -116,7 +116,7 @@ if ($errmsg != '') {
 		$sql = "insert into mail_list(name,address,naiyo) values(:name,:address,:naiyo)";
 		$stmt = $dbInfo ->prepare($sql);
 		$stmt->bindParam ( ":name", $pName, PDO::PARAM_STR );
-		$stmt->bindValue ( ":address", $pMailaddress, PDO::PARAM_INT );
+		$stmt->bindValue ( ":address", $pMailaddress, PDO::PARAM_STR );
 		$stmt->bindParam ( ":naiyo", $pNaiyo, PDO::PARAM_STR );
 		$result = $stmt -> execute();
 	
@@ -134,7 +134,7 @@ if ($errmsg != '') {
 		$sql = "insert into mail_list(name,address,naiyo) values(:name,:address,:naiyo)";
 		$stmt = $dbInfo ->prepare($sql);
 		$stmt->bindParam ( ":name", $pName, PDO::PARAM_STR );
-		$stmt->bindValue ( ":address", $pMailaddress, PDO::PARAM_INT );
+		$stmt->bindValue ( ":address", $pMailaddress, PDO::PARAM_STR );
 		$stmt->bindParam ( ":naiyo", $pNaiyo, PDO::PARAM_STR );
 		$result = $stmt -> execute();
 	

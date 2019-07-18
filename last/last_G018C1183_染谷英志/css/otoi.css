@@ -1,0 +1,15 @@
+fieldset.kanri{
+    display: inline-block;
+}
+
+img.eiji{
+    width: 20px;
+    height: 20px;
+}
+
+
+textarea.bun{
+    width: 50%;
+    height: 100px;
+    resize: vertical;
+}

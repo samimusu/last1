@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!--<link rel="stylesheet" type="text/css" href="css/confilm.css" /> -->
 <title>入力内容の確認｜メール送信フォーム</title>
 </head>
 <body>
-
+<fieldset>
 <?php
 /*直接ページのアクセスされた時の対処 */
 if (! isset ( $_POST ["btn"] )) {
@@ -56,7 +57,7 @@ if ($errmsg != '') {
 	echo '<dt>【お名前】</dt><dd>'.$pName.'</dd>';
 	echo '<dt>【メールアドレス】</dt><dd>'.$pMailaddress.'</dd>';
 	echo '<dt>【お問合せ内容】</dt><dd>'.$pNaiyo.'</dd>';
-    echo '</dl>';
+	echo '</dl>';
     
     //[上記内容で送信する]ボタンを表示する
 	echo '<form method="post" action="mailtolist_ver1_01.php">';
@@ -67,6 +68,6 @@ if ($errmsg != '') {
 	echo '</form>';
 }
 ?>
-
+</fieldset>
 </body>
 </html>
